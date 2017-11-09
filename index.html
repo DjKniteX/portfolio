@@ -231,7 +231,11 @@
         <div class="mx-auto">
           
   <h1 style="text-align:center">Contact</h1>
-  <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbyegegaOmjp1r2_DZwTHOdezj4e8eOOkTeh8QmfU-wXE97Phqw/exec" role="form" data-email="pureknitex@hotmail.com">
+  <div style="display:none;" id="thankyou_message">
+    <h3><em>Thanks</em> for sending me a message.
+      I will contact you soon!</h3>
+  </div>
+  <form id="gform" method="post" data-email="pureknitex@hotmail.com" action="https://script.google.com/macros/s/AKfycbyegegaOmjp1r2_DZwTHOdezj4e8eOOkTeh8QmfU-wXE97Phqw/exec" role="form">
     
         <div class="messages"></div>
     
@@ -283,10 +287,6 @@
             </div>
         </div>
           <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none;" id="thankyou_message">
-    <h2><em>Thanks</em> for contacting us!
-      We will get back to you soon!</h2>
-  </div>
     
     </form>
           <p class="social">
@@ -348,9 +348,8 @@
   <script src="js/front.js"></script>
 
   <!-- Contact Script -->
-  <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-  <script src="js/google-script-just-email.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
 
 </body>
 
