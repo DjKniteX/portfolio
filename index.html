@@ -4,9 +4,30 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Nikki Xaysanasy / Portfolio</title>
+  <!-- Flavicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Other Meta -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
+  <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, Nikki X, Nikki Xaysanasy, Springdale, NWA Developer, Arkansas Web Developer">
   <!-- Bootstrap and Font Awesome css-->
   <!-- we use cdn but you can also include local files located in css directory-->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -51,6 +72,7 @@
                           <span class="network-name">Github</span>
                         </a>
                       </li>
+                      <li class="list-inline-item">
                 <a href="http://twitter.com/djknitex" class="btn btn-primary btn-lg">
                   <i class="fa fa-twitter fa-fw"></i>
                   <span class="network-name">Twitter</span>
@@ -104,6 +126,10 @@
             My dream is to become a Full-Stack JavaScript Developer and work on many different apps and websites.</p>
           <p>I'm most familiar with HTML5, CSS3, and JavaScript. I'm currently learning Angular and NativeScript and love discovering new technologies and framework in the web development world. 
             I use many different learning platforms such as Udacity, Lynda, Coursera and many more.</p>
+            <p>Aside from web developing and working on my apps, I like to read and write. My passion was to be a detective but I decided to write about one instead. I'm also a performer and in many different music projects including
+              a pop punk/emo band and as a Rapper. I used to DJ professionally and taught a couple folks in NWA that are still continuing to DJ. I performed live in different states and even performed overseas. I still perform and write music on my acoustic guitar.
+              And it's not something that I will be giving up anytime soon.
+            </p>
         </div>
         <div class="col-md-5 col-md-offset-1">
           <p>
@@ -140,7 +166,7 @@
             <p class="card-text">Cartuga is a short Web RPG built primarily in the <em>RPG Maker MV</em> Engine. I built the website using <em>Bulma</em> and the game is playable through the website.</p>
           </div>
           <div class="card-footer">
-            <a href="https://djknitex.github.io/cartuga/" class="btn btn-primary">Visit Website</a>
+            <a href="https://djknitex.github.io/cartuga/" class="btn btn-primary" target="a_blank">Visit Website</a>
           </div>
         </div>
       </div>
@@ -150,13 +176,13 @@
           <div class="card-body">
             <h4 class="card-title">Fruit for Thought</h2>
             <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="card image cap">
+                <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="card image cap" target="a_blank">
               </div>
             <p class="card-text">Fruit for Thought is a mock business that specializes in selling fruits and seeds. The website was coded primarily in <em>Bootstrap</em>.
             </p>
           </div>
           <div class="card-footer">
-            <a href="http://djknitex.github.io/fruitforthought" class="btn btn-primary">Visit Website</a>
+            <a href="http://djknitex.github.io/fruitforthought" class="btn btn-primary" target="a_blank">Visit Website</a>
           </div>
         </div>
       </div>
@@ -243,15 +269,15 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="form_name">Firstname *</label>
-                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                        <label for="form_name">First Name *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="First name is required.">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="form_lastname">Lastname *</label>
-                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                        <label for="form_lastname">Last Name *</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Last name is required.">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
@@ -259,8 +285,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="form_email">Email *</label>
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        <label for="form_email">Email Address *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email address is required.">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
