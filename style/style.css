@@ -208,7 +208,7 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {
 @media (min-width: 768px) {
 	.app-cell {
 		text-align: left;
-		height: 90px;
+		height: 100px;
 	}
 
     .app-icon img {
@@ -227,6 +227,17 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {
 	.app-cell {
 		height: auto;
 	}
+}
+
+@media(min-width: 300px) and (max-width: 500px) {
+    .app-section {
+        margin: auto;
+        padding: auto;
+    }
+
+    .app-cell {
+        height: 250px;
+    }
 }
 
 p.social {
