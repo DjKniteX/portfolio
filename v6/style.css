@@ -76,6 +76,10 @@ li a:hover {
     letter-spacing: 10px;
   }
 
+  .border:hover {
+    transform: scale(1.5);
+  }
+
   .center {
     position: absolute;
     text-align: center;
