@@ -6,13 +6,17 @@ body, html {
   }
   
   /* Nav Bar */
+  nav {
+    position: absolute;
+  }
 
   ul {
+    position: fixed;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333;
+    width: 100%;
 }
 
 li {
@@ -58,7 +62,7 @@ li a:hover {
   .caption {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 65%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -72,6 +76,18 @@ li a:hover {
     letter-spacing: 10px;
   }
 
+  .center {
+    position: absolute;
+    text-align: center;
+    padding: 18px;
+    left: -1%;
+    width: 100%;
+    top: 20%;
+  }
+
+  .center > h3, h4 {
+    color: #fff;
+  }
   
   h3 {
     letter-spacing: 5px;
@@ -87,7 +103,20 @@ li a:hover {
 
   .fadeFromTop {
     position: relative;
-    animation: animatetop 0.4s
+    animation: animatetop 0.4s;
+  }
+
+  .fadeIn {
+    position: relative;
+    animation: fadein 0.4s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
   }
 
   @keyframes animatetop {
