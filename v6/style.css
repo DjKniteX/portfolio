@@ -96,6 +96,21 @@ li a:hover {
     color: #111;
   }
 
+  footer {
+    background-color: #343a40;
+    width: 100%;
+  }
+
+  .footer-text {
+    color: #fff;
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
+    margin-top: 20px;
+  }
+
   .fadeInUp {
       position: relative;
       animation: animatebottom 0.8s;
