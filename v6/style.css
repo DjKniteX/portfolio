@@ -1,161 +1,226 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
-  }
-  
-  /* Nav Bar */
-  nav {
-    position: absolute;
-  }
-
-  ul {
-    position: fixed;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    width: 100%;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  width: 100%;
 }
 
-li {
-    float: left;
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.bgimg-1 {
+  background-image: url("../images/laptop.jpeg");
+  min-height: 100%;
 }
 
-li a:hover {
-    background-color: #111;
+.bgimg-2 {
+  background-image: url("../images/forest.jpg");
+  min-height: 400px;
 }
 
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
+.bgimg-3 {
+  background-image: url("../images/ai.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  bottom: 80px;
+}
+
+button {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  bottom: 140px;
+  border: none;
+}
+
+.row {
+  margin: 8px -16px;
+  text-align: center;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  margin: auto;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+      width: 50%;
   }
-  .bgimg-1 {
-    background-image: url("../images/laptop.jpeg");
-    min-height: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
   }
-  
-  .bgimg-2 {
-    background-image: url("../images/forest.jpg");
-    min-height: 400px;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    width: 30%;
   }
-  
+}
+
+#borderContact {
+  bottom: 360px;
+  top: 300px;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.center {
+  position: absolute;
+  text-align: center;
+  padding: 18px;
+  left: -1%;
+  width: 100%;
+  top: 20%;
+}
+
+.center>h3,
+h4 {
+  color: #fff;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+#h4move {
+  position: relative;
+  top: -30px;
+}
+
+footer {
+  background-color: #343a40;
+  width: 100%;
+}
+
+.footer-text {
+  color: #fff;
+  text-align: center;
+}
+
+
+.social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fadeInUp {
+  position: relative;
+  animation: animatebottom 0.8s;
+}
+
+.fadeFromTop {
+  position: relative;
+  animation: animatetop 0.4s;
+}
+
+.fadeIn {
+  position: relative;
+  animation: fadein 1.4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -900px;
+    opacity: 0
+  }
+  to {
+    bottom: 140px;
+    opacity: 1;
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
   .bgimg-3 {
-    background-image: url("../images/ai.jpg");
-    min-height: 400px;
+    background-attachment: scroll;
   }
-  
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 65%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
-
-  .center {
-    position: absolute;
-    text-align: center;
-    padding: 18px;
-    left: -1%;
-    width: 100%;
-    top: 20%;
-  }
-
-  .center > h3, h4 {
-    color: #fff;
-  }
-  
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
-  }
-
-  footer {
-    background-color: #343a40;
-    width: 100%;
-  }
-
-  .footer-text {
-    color: #fff;
-    text-align: center;
-  }
-
-  .social {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .fadeInUp {
-      position: relative;
-      animation: animatebottom 0.8s;
-  }
-
-  .fadeFromTop {
-    position: relative;
-    animation: animatetop 0.4s;
-  }
-
-  .fadeIn {
-    position: relative;
-    animation: fadein 0.4s;
-  }
-
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    } to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes animatetop {
-    from {
-      top: -300px;
-      opacity: 0;
-    } to {
-      top: 0;
-      opacity: 1;
-    }
-  }
-
-  @keyframes animatebottom {
-      from {
-          bottom: -900px;
-          opacity: 0
-      } to {
-          bottom: 0;
-          opacity: 1;
-      }
-  }
-  
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1024px) {
-      .bgimg-1, .bgimg-2, .bgimg-3 {
-          background-attachment: scroll;
-      }

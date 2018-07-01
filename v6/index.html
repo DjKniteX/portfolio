@@ -3,34 +3,42 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nikki X - Portolio</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!--JavaScript-->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="main.js"></script>
 <!-- CSS & JSS -->
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
-<nav class="fadeFromTop">
+<!-- <nav class="fadeFromTop">
   <ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#about">About</a></li>
   </ul>
-</nav>
+</nav> -->
 <div class="bgimg-1">
   <div class="center">
-  <h3 style="font-size:36px">Nikki Xaysanasy</h3>
-  <h4>Front-End Web Developer</h4>
-  <h4>Los Angeles, California</h4>
+  <h3 style="font-size:36px" class="fadeIn">Nikki Xaysanasy</h3>
+  <h4 style="font-size:24px" class="fadeIn" >Front-End Web Developer</h4>
+  <h4 style="font-size:24px" class="fadeIn" id="h4move">Los Angeles, California</h4>
   </div>
   <div class="caption">
-    <span class="border fadeInUp">Portfolio</span>
-    <span class="border fadeInUp">Tech Blog</span>
+    <button class="fadeInUp" onclick="relocate_home()">Portfolio</button>
+    <button class="fadeInUp" onclick="relocate_blog()">Tech Blog</button>
   </div>
 </div>
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Who I Am</h3>
+  <h3 style="text-align:center;" id="me">Who I Am</h3>
   <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
 </div>
 
@@ -42,48 +50,113 @@
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="../images/cartuga.png" alt="Mountains" style="width:100%">
+      <h3>Cartuga - Web RPG</h3>
+      <p style="color: #000;">A web rpg that was developed entirely in RPG Maker MV was released on December 15th, 2017 to showcase for local tech companies. It is a short rpg built to be finished under one hour and plays very similar to classic rpgs such as Dragon Quest and Final Fantasy.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="../images/angular-logo.png" alt="Lights" style="width:100%">
+      <h3>My Angular Final - To Do List</h3>
+      <p style="color: #000;">A small Angular List that was built for my Front-End Class final and functions like a simple to do list and has a functioning weather portion using the OpenWeatherMap API.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="../images/codepen.png" alt="Nature" style="width:100%">
+      <h3>Codepen Projects</h3>
+      <p style="color: #000;">Here are some of my smaller projects or just test sites that I build on my free time. I also showcase my FreeCodeCamp projects that I built for the course.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
   </div>
 </div>
 
 <div class="bgimg-3">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">What I Work With</span>
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">ALWAYS INNOVATING</span>
   </div>
 </div>
 
 <div style="position:relative;">
   <div class="fadeFromTop" style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+      <h1 style="text-align: center; margin-right: 50px;">What I work with</h1>  
+      <div class="row" id="container">
+          <div class="column hideme">
+            <div>
+                <span style="font-size:  80px; color: Dodgerblue;text-align: center;">
+                    <i class="fab fa-html5"></i>
+                  </span>
+              <h3>HTML5</h3>
+              <p>Semantic Markup</p>
+            </div>
+          </div>
+          <div class="column hideme">
+            <div>
+                <span style="font-size:  80px; color: Dodgerblue;">
+                    <i class="fab fa-css3"></i>
+                  </span>
+              <h3>CSS3</h3>
+              <p>Cross-platform styling</p>
+            </div>
+          </div>
+          <div class="column hideme">
+            <div>
+                <span style="font-size:  80px; color: Dodgerblue;">
+                    <i class="fab fa-js-square"></i>
+                  </span>
+                <h3>JavaScript</h3>
+              <p>Interactive websites and applications</p>
+            </div>
+          </div>
+          <div class="column hideme">
+              <div>
+                  <span style="font-size:  80px; color: Dodgerblue;text-align: center;">
+                      <i class="fab fa-linux"></i>
+                    </span>
+                <h3>Linux</h3>
+                <p>Mobile &amp Web Development</p>
+              </div>
+            </div>
+            <div class="column hideme">
+              <div>
+                  <span style="font-size:  80px; color: Dodgerblue;">
+                      <i class="fab fa-wordpress"></i>
+                    </span>
+                <h3>Wordpress</h3>
+                <p>Content Mangement System</p>
+              </div>
+            </div>
+            <div class="column hideme">
+              <div>
+                  <span style="font-size:  80px; color: Dodgerblue;">
+                      <i class="fab fa-git"></i>
+                    </span>
+                  <h3>Git</h3>
+                <p>Version Control History</p>
+              </div>
+            </div>
+        <!-- END GRID -->
+        </div>
   </div>
 </div>
 
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border">Contact Me</span>
+    <h1 style="margin-top: -400px; font-size: 48px; color: #fff;">Contact Me</h1>
   </div>
+  <div class="caption" style="margin-top: -100px">
+      <button class="fadeInUp" onclick="relocate_linkedin()"><i class="fab fa-linkedin"></i>Linkedin</button>
+      <button class="fadeInUp" onclick="relocate_github()"><i class="fab fa-github"></i>Github</button>
+      <button class="fadeInUp" onclick="relocate_email()"><i class="far fa-envelope"></i>Email</button>
+    </div>
 </div>
-<footer>
-  <div class="container">
-    <p class="footer-text">Copyright &copy; Nikki Xaysanasy 2017</p>
-    <p class="social">
-        <a href="https://www.linkedin.com/in/nikki-xaysanasy-8b8565a1" title="" class="twitter">
-          <i class="fa fa-linkedin"></i>
-        </a>
-        <a href="http://www.twitter.com/djknitex" title="" class="twitter">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="https://github.com/DjKniteX" title="" class="twitter">
-          <i class="fa fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/djknitex/" title="" class="twitter">
-          <i class="fa fa-instagram"></i>
-        </a>
-        <a href="mailto:nxaysanasy@gmail.com?Subject=Hello%20again" title="" class="twitter">
-          <i class="fa fa-envelope"></i>
-        </a>
-      </p>
-  </div>
-</footer>
+<p>Nikki Xaysanasy</p>
 </body>
 </html>
