@@ -70,6 +70,10 @@ button {
 .row {
   margin: 8px -16px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 4px;
 }
 
 /* Add padding BETWEEN each column */
@@ -82,7 +86,7 @@ button {
 .column {
   float: left;
   width: 25%;
-  margin: auto;
+  margin: 5px;
 }
 
 /* Clear floats after rows */ 
