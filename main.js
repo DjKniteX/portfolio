@@ -1,11 +1,3 @@
-function relocate_home()
-{
-     location.href = "#me";
-} 
-
-function relocate_blog() {
-    location.href = "http://blog.nikkix.me"
-}
 
 function relocate_linkedin() {
     location.href = "https://www.linkedin.com/in/nikki-xaysanasy-8b8565a1/"
