@@ -85,4 +85,11 @@ body, html {
           background-attachment: scroll;
       }
   }
+
+  @media only screen and (min-device-width: 360px) {
+    .caption {
+      text-align: center;
+    }
+  }
+
   
