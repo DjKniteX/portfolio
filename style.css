@@ -99,6 +99,14 @@ button {
   padding: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 900px) {
