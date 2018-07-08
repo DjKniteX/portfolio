@@ -129,6 +129,11 @@ a:hover {
   animation: fadein 1.4s;
 }
 
+.hideme
+{
+    opacity:0;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
