@@ -1,16 +1,3 @@
-
-function relocate_linkedin() {
-    location.href = "https://www.linkedin.com/in/nikki-xaysanasy-8b8565a1/"
-}
-
-function relocate_github() {
-    location.href = "https://github.com/djknitex"
-}
-
-function relocate_email() {
-    location.href = "mailto:nxaysanasy@gmail.com"
-}
-
 $(document).ready(function() {
     
     /* Every time the window is scrolled ... */
@@ -34,3 +21,16 @@ $(document).ready(function() {
     });
     
 });
+
+
+function relocate_linkedin() {
+    location.href = "https://www.linkedin.com/in/nikki-xaysanasy-8b8565a1/"
+}
+
+function relocate_github() {
+    location.href = "https://github.com/djknitex"
+}
+
+function relocate_email() {
+    location.href = "mailto:nxaysanasy@gmail.com"
+}
