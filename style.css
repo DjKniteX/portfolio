@@ -135,15 +135,11 @@ a:hover {
   color: black;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.footer {
+  background-color: #333;
+  overflow: hidden;
 }
 
-.sticky + .content {
-  padding-top: 60px;
-}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 
