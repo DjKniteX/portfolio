@@ -1,103 +1,153 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("images/laptop.jpeg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("images/forest.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("images/ai.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+button {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  bottom: 140px;
+  border: none;
+}
+
+.row {
+  margin: auto;
+}
+
+/* Add padding BETWEEN each column */
+
+.row,
+.row>.column {
+  padding: 30px;
+}
+
+/* Create four equal columns that floats next to each other */
+
+.column {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after rows */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
   }
-  
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  }
-  .bgimg-1 {
-    background-image: url("images/laptop.jpeg");
-    min-height: 100%;
-  }
-  
-  .bgimg-2 {
-    background-image: url("images/forest.jpg");
-    min-height: 400px;
-  }
-  
-  .bgimg-3 {
-    background-image: url("images/ai.jpg");
-    min-height: 400px;
-  }
-  
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 30%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
+  }
+}
+
+/* effects */
+
+.fadeIn {
+  animation: fadein 1.4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (min-device-width: 360px) {
+  .caption {
     text-align: center;
-    color: #000;
   }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
+  .fadeInUp {
+    margin: 30px;
   }
-  
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
+  .border {
+    margin: -15px;
   }
-  button {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-    bottom: 140px;
-    border: none;
-  }
-
-  /* effects */
-
-  .fadeIn {
-    animation: fadein 1.4s;
-  }
-
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  
-  
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1024px) {
-      .bgimg-1, .bgimg-2, .bgimg-3 {
-          background-attachment: scroll;
-      }
-  }
-
-  @media only screen and (min-device-width: 360px) {
-    .caption {
-      text-align: center;
-    }
-
-    .fadeInUp{
-      margin: 30px;
-    }
-
-    .border {
-      margin: -15px;
-    }
-  }
-
-  
+}
