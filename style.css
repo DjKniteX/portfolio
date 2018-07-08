@@ -52,7 +52,7 @@ html {
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 24px "Lato", sans-serif;
   color: #111;
 }
 
@@ -201,4 +201,8 @@ a:hover {
   .border {
     margin: -15px;
   }
+    h3 {
+      font-size: 16px;
+    }
+
 }
