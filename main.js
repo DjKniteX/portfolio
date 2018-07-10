@@ -46,3 +46,11 @@ function scrollFunction() {
         document.getElementById("navbar").style.top = "-50px";
     }
 }
+
+$("nav").find("a").click(function(e){
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
