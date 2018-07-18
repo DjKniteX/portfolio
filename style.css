@@ -41,6 +41,15 @@ html {
   color: #000;
 }
 
+.bgheader {
+    position: absolute;
+  left: 0;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
 .caption span.border {
   background-color: #111;
   color: #fff;
