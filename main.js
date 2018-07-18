@@ -35,6 +35,12 @@ function relocate_github() {
 function relocate_email() {
     location.href = "mailto:nxaysanasy@gmail.com"
 }
+function relocate_portfolio() {
+    location.href = "#portfolio"
+}
+function relocate_blog() {
+    location.href = "https://blog.nikkix.me"
+}
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {scrollFunction()};
