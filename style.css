@@ -184,6 +184,11 @@ a:hover {
   overflow: hidden;
 }
 
+@media screen and (min-width: 196px) and (max-width: 359px) {
+  .bgheader {
+    top: 25%;
+  }
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 
